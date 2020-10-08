@@ -8,3 +8,13 @@ C:\Users\danie\source\repos\NinjaManagerASP\NinjaManagerDatabase\obj\Debug\Model
 C:\Users\danie\source\repos\NinjaManagerASP\NinjaManagerDatabase\obj\Debug\refactor.xml
 C:\Users\danie\source\repos\NinjaManagerASP\NinjaManagerDatabase\obj\Debug\postdeploy.sql
 C:\Users\danie\source\repos\NinjaManagerASP\NinjaManagerDatabase\obj\Debug\predeploy.sql
+C:\Users\danie\Documents\GitHub\NinjaManager\NinjaManagerASP\NinjaManagerDatabase\bin\Debug\NinjaManagerDatabase.dacpac
+C:\Users\danie\Documents\GitHub\NinjaManager\NinjaManagerASP\NinjaManagerDatabase\bin\Debug\NinjaManagerDatabase.dll
+C:\Users\danie\Documents\GitHub\NinjaManager\NinjaManagerASP\NinjaManagerDatabase\bin\Debug\NinjaManagerDatabase.pdb
+C:\Users\danie\Documents\GitHub\NinjaManager\NinjaManagerASP\NinjaManagerDatabase\obj\Debug\NinjaManagerDatabase.sqlprojAssemblyReference.cache
+C:\Users\danie\Documents\GitHub\NinjaManager\NinjaManagerASP\NinjaManagerDatabase\obj\Debug\Model.xml
+C:\Users\danie\Documents\GitHub\NinjaManager\NinjaManagerASP\NinjaManagerDatabase\obj\Debug\refactor.xml
+C:\Users\danie\Documents\GitHub\NinjaManager\NinjaManagerASP\NinjaManagerDatabase\obj\Debug\postdeploy.sql
+C:\Users\danie\Documents\GitHub\NinjaManager\NinjaManagerASP\NinjaManagerDatabase\obj\Debug\predeploy.sql
+C:\Users\danie\Documents\GitHub\NinjaManager\NinjaManagerASP\NinjaManagerDatabase\obj\Debug\NinjaManagerDatabase.dll
+C:\Users\danie\Documents\GitHub\NinjaManager\NinjaManagerASP\NinjaManagerDatabase\obj\Debug\NinjaManagerDatabase.pdb
