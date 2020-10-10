@@ -4,31 +4,31 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="NinjaManagerASPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="NinjaManagerASPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Category">
           <Key>
             <PropertyRef Name="CategoryName" />
           </Key>
-          <Property Name="CategoryName" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CategoryName" Type="nchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="Equipment">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="50" Nullable="false" />
           <Property Name="Price" Type="int" Nullable="false" />
           <Property Name="Strength" Type="int" Nullable="false" />
           <Property Name="Agility" Type="int" Nullable="false" />
           <Property Name="Intelligence" Type="int" Nullable="false" />
-          <Property Name="Category" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Category" Type="nchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="Ninja">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="50" Nullable="false" />
           <Property Name="Gold" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="NinjaEquipment">
@@ -93,8 +93,7 @@
             <End Role="NinjaEquipment" EntitySet="NinjaEquipment" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="NinjaManagerASPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -102,7 +101,7 @@
           <Key>
             <PropertyRef Name="CategoryName" />
           </Key>
-          <Property Name="CategoryName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Equipments" Relationship="Self.FK_Category" FromRole="Category" ToRole="Equipment" />
         </EntityType>
         <EntityType Name="Equipment">
@@ -110,12 +109,12 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="Price" Type="Int32" Nullable="false" />
           <Property Name="Strength" Type="Int32" Nullable="false" />
           <Property Name="Agility" Type="Int32" Nullable="false" />
           <Property Name="Intelligence" Type="Int32" Nullable="false" />
-          <Property Name="Category" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Category" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Category1" Relationship="Self.FK_Category" FromRole="Equipment" ToRole="Category" />
           <NavigationProperty Name="Ninjas" Relationship="Self.NinjaEquipment" FromRole="Equipment" ToRole="Ninja" />
         </EntityType>
@@ -124,7 +123,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="Gold" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Equipments" Relationship="Self.NinjaEquipment" FromRole="Ninja" ToRole="Equipment" />
         </EntityType>

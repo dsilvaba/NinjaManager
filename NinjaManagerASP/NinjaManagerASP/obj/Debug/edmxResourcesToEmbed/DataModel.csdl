@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="CategoryName" />
     </Key>
-    <Property Name="CategoryName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
     <NavigationProperty Name="Equipments" Relationship="Self.FK_Category" FromRole="Category" ToRole="Equipment" />
   </EntityType>
   <EntityType Name="Equipment">
@@ -12,12 +12,12 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="Price" Type="Int32" Nullable="false" />
     <Property Name="Strength" Type="Int32" Nullable="false" />
     <Property Name="Agility" Type="Int32" Nullable="false" />
     <Property Name="Intelligence" Type="Int32" Nullable="false" />
-    <Property Name="Category" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
     <NavigationProperty Name="Category1" Relationship="Self.FK_Category" FromRole="Equipment" ToRole="Category" />
     <NavigationProperty Name="Ninjas" Relationship="Self.NinjaEquipment" FromRole="Equipment" ToRole="Ninja" />
   </EntityType>
@@ -26,7 +26,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="Gold" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Equipments" Relationship="Self.NinjaEquipment" FromRole="Ninja" ToRole="Equipment" />
   </EntityType>

@@ -4,26 +4,26 @@
     <Key>
       <PropertyRef Name="CategoryName" />
     </Key>
-    <Property Name="CategoryName" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="CategoryName" Type="nchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="Equipment">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="50" Nullable="false" />
     <Property Name="Price" Type="int" Nullable="false" />
     <Property Name="Strength" Type="int" Nullable="false" />
     <Property Name="Agility" Type="int" Nullable="false" />
     <Property Name="Intelligence" Type="int" Nullable="false" />
-    <Property Name="Category" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Category" Type="nchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="Ninja">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="50" Nullable="false" />
     <Property Name="Gold" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="NinjaEquipment">
