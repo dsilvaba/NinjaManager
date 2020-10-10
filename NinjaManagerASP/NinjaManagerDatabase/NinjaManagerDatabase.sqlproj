@@ -62,11 +62,6 @@
     <Build Include="Equipment.sql" />
     <Build Include="Category.sql" />
     <Build Include="NinjaEquipment.sql" />
-    <Build Include="AspNetUsers.sql" />
-    <Build Include="AspNetUserRoles.sql" />
-    <Build Include="AspNetUserLogins.sql" />
-    <Build Include="AspNetUserClaims.sql" />
-    <Build Include="AspNetRoles.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="NinjaManagerDatabase.refactorlog" />
